@@ -10,7 +10,8 @@ namespace CoreProgram1
             Console.WriteLine("1.FlipCoin" + "\n" +
                                 "2.LeapYear" + "\n" +
                                 "3.Powerof2"+"\n" +
-                                "4.Harmonic Number"+"\n");
+                                "4.Harmonic Number"+"\n"+
+                                "5.PrimeFactor"+"\n");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -34,6 +35,10 @@ namespace CoreProgram1
                     Console.WriteLine("Enter the Range for Harmonic Number");
                     int number = Convert.ToInt32(Console.ReadLine());
                     harmonicNumber.Calculate(number);
+                    break;
+                case 5:
+                    PrimeFactor primeFactor = new PrimeFactor();
+                    primeFactor.Factor();
                     break;
 
             }
