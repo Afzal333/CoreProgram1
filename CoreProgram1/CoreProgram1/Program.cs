@@ -9,7 +9,8 @@ namespace CoreProgram1
             Console.WriteLine("CoreProgram Exercise 1");
             Console.WriteLine("1.FlipCoin" + "\n" +
                                 "2.LeapYear" + "\n" +
-                                "3.Powerof2"+"\n");
+                                "3.Powerof2"+"\n" +
+                                "4.Harmonic Number"+"\n");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -28,6 +29,13 @@ namespace CoreProgram1
                     int power = Convert.ToInt32(Console.ReadLine());
                     powerofTwo.Power(power);
                     break;
+                case 4:
+                    HarmonicNumber harmonicNumber = new HarmonicNumber();
+                    Console.WriteLine("Enter the Range for Harmonic Number");
+                    int number = Convert.ToInt32(Console.ReadLine());
+                    harmonicNumber.Calculate(number);
+                    break;
+
             }
         }
     }
