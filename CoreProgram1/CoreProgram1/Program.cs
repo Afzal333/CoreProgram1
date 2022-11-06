@@ -13,7 +13,8 @@ namespace CoreProgram1
                                 "4.Harmonic Number"+"\n"+
                                 "5.PrimeFactor"+"\n" + 
                                 "6.Quotient and Remainder" +"\n"+
-                                "7.Swap Two Numbers"+"\n");
+                                "7.Swap Two Numbers"+"\n" +
+                                "8.Even or Odd"+"\n");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -49,6 +50,10 @@ namespace CoreProgram1
                 case 7:
                     SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
                     swapTwoNumbers.Swap();
+                    break;
+                case 8:
+                    EvenorOdd evenorOdd = new EvenorOdd();
+                    evenorOdd.EvenOdd();
                     break;
 
             }
