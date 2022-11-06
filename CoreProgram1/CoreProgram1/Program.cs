@@ -15,7 +15,8 @@ namespace CoreProgram1
                                 "6.Quotient and Remainder" +"\n"+
                                 "7.Swap Two Numbers"+"\n" +
                                 "8.Even or Odd"+"\n" +
-                                "9. Alphabet Vowel or Consonant ");
+                                "9. Alphabet Vowel or Consonant " +"\n" +
+                                "10.Third Largest Number");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -60,7 +61,10 @@ namespace CoreProgram1
                     AlphabetVowelConsonant alphabetVowelConsonant = new AlphabetVowelConsonant();
                     alphabetVowelConsonant.VowelConsonant();
                     break;
-
+                case 10:
+                    LargestNumber largestNumber = new LargestNumber();
+                    largestNumber.ThirdLargestNumber();
+                    break;
             }
         }
     }
