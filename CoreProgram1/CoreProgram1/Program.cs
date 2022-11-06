@@ -12,7 +12,8 @@ namespace CoreProgram1
                                 "3.Powerof2"+"\n" +
                                 "4.Harmonic Number"+"\n"+
                                 "5.PrimeFactor"+"\n" + 
-                                "6.Quotient and Remainder" +"\n");
+                                "6.Quotient and Remainder" +"\n"+
+                                "7.Swap Two Numbers"+"\n");
             Console.WriteLine("Enter option to execute");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -44,6 +45,10 @@ namespace CoreProgram1
                 case 6:
                     QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
                     quotientAndRemainder.DivRem();
+                    break;
+                case 7:
+                    SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
+                    swapTwoNumbers.Swap();
                     break;
 
             }
